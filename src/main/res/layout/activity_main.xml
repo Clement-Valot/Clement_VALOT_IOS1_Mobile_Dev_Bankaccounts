@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/explicationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Welcome on Bank Accounts Displayer!\n
+        \nTo log in to the application and be able to see your bank accounts you need:"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/masterkeyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="The Masterkey to allow secure communication with the mock API"
+        android:layout_below="@+id/explicationText"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/masterkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/masterkeyText"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:hint="Masterkey"/>
+
+    <TextView
+        android:id="@+id/userIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="Your user ID to see your bank accounts"
+        android:layout_below="@+id/masterkey"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userIDText"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="User ID"/>
+
+    <Button
+        android:id="@+id/connectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userID"
+        android:text="Connect"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="Welcome Back"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:padding="5dp"
+        android:gravity="center"
+        android:text="Name "
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/accountID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Account ID"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountID"
+        android:layout_marginTop="20dp"
+        android:text="FIND"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/accountName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/okBtn"
+        android:text="Account Name :"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/accountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/okBtn"
+        android:layout_toRightOf="@+id/accountName"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:hint="value"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/iban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/accountName"
+        android:text="IBAN :"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/ibanValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountName"
+        android:layout_toRightOf="@+id/iban"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:hint="value"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/iban"
+        android:text="Amount :"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/amountValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iban"
+        android:layout_toRightOf="@+id/amount"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:hint="value"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/amount"
+        android:text="Currency :"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/currencyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:layout_toRightOf="@+id/currency"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:hint="value"
+        android:textSize="20dp" />
+
+    <!--<Button
+        android:id="@+id/refreshBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currency"
+        android:text="Refresh"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>-->
+</RelativeLayout>
