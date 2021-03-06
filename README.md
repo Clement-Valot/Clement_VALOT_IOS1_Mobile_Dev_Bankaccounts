@@ -51,3 +51,6 @@ com_example_bankaccounts_accounts_getAPIKey(JNIEnv *env, jobject object) {
 5. Now, I can call getAPIKey function in kotlin file
 
 To hide the API url, I hid the API key in a C++ file, just like the encryption key, the masterkey and file names. All those tokens are also encrypted in the C++ file. API_KEY could then be called anywhere in the source code (in specified kotlin files) through getAPIkey() function. Plus, the last part of the url, i.e ":endpoint", is stored in a variable passed in parameters. This combined with code obfuscation makes it a little harder to get the API url. By the way, to activate code obfuscation, we simply put the minifyEnable to true in the gradle file.
+
+## Screenshots of my Application
+Since it is not practicle to put images in a readme and because I have a lot of them to show, i decided to create a pdf file named user experience where I explore all the cases and the reaction of my application to it. I put this file inside the git as well.
